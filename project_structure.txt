@@ -1,0 +1,23 @@
+AethelProject/
+├─ Scenes/
+│   ├─ Main.tscn
+│   ├─ Player/
+│   │   ├─ Human.tscn
+│   │   ├─ Elf.tscn
+│   │   ├─ Demon.tscn
+│   ├─ Biomes/
+│   │   ├─ Forest.tscn
+│   │   ├─ Mountain.tscn
+│   │   ├─ Underworld.tscn
+│   ├─ UI/
+│       ├─ MainMenu.tscn
+│       ├─ HUD.tscn
+├─ Scripts/
+│   ├─ Player.gd (Base player logic)
+│   ├─ Human.gd
+│   ├─ Elf.gd
+│   ├─ Demon.gd
+├─ Assets/
+│   ├─ Sprites/
+│   ├─ Audio/
+│   ├─ Tilesets/
