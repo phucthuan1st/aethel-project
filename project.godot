@@ -11,12 +11,24 @@ config_version=5
 [application]
 
 config/name="Aethel Project"
+config/description="Ngọn Lửa Tàn trên Aethel
+Based on: Tiểu thuyết cùng tên của Xà Thủ Ngư"
+run/main_scene="uid://c3nix6m8o6gks"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1600
+window/size/viewport_height=900
 
 [dotnet]
 
 project/assembly_name="Aethel Project"
+
+[gui]
+
+theme/custom_font="uid://dcwgjpf317h1j"
 
 [rendering]
 
