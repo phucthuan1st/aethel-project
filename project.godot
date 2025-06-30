@@ -19,8 +19,8 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=1600
-window/size/viewport_height=900
+window/size/viewport_width=1366
+window/size/viewport_height=768
 
 [dotnet]
 
@@ -32,5 +32,6 @@ theme/custom_font="uid://dcwgjpf317h1j"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

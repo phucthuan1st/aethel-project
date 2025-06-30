@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://c3nix6m8o6gks"]
+[gd_scene load_steps=3 format=3 uid="uid://c3nix6m8o6gks"]
+
+[ext_resource type="PackedScene" uid="uid://co8tb8vvys6vg" path="res://Scenes/Player/Human.tscn" id="1_r150o"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r150o"]
 
 [node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Human" parent="." instance=ExtResource("1_r150o")]
+position = Vector2(-2, -102)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_r150o")
