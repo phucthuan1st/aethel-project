@@ -13,7 +13,7 @@ position = Vector2(232, 0)
 shape = SubResource("WorldBoundaryShape2D_r150o")
 
 [node name="tone1_human_male" parent="." instance=ExtResource("1_r150o")]
-position = Vector2(274, -41)
+position = Vector2(299, -127)
 
 [node name="Camera2D" type="Camera2D" parent="tone1_human_male"]
 zoom = Vector2(2.5, 2.5)

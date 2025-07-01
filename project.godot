@@ -26,6 +26,15 @@ window/size/viewport_height=768
 
 project/assembly_name="Aethel Project"
 
+[file_customization]
+
+folder_colors={
+"res://Assests/": "orange",
+"res://Extras/": "teal",
+"res://Resources/": "pink",
+"res://Scenes/": "red"
+}
+
 [gui]
 
 theme/custom_font="uid://dcwgjpf317h1j"
