@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dngbuyl65r1uo"]
+
+[ext_resource type="PackedScene" uid="uid://dvfxqjlmdvskw" path="res://Scenes/Player/Human/base_human.tscn" id="1_lqtvm"]
+[ext_resource type="SpriteFrames" uid="uid://cjs4khdm0sqil" path="res://Resources/human_female/tone3_human_female.tres" id="2_ymp3k"]
+
+[node name="tone3_human_female" instance=ExtResource("1_lqtvm")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+sprite_frames = ExtResource("2_ymp3k")
+animation = &"attack"

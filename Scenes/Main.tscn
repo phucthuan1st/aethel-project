@@ -1,17 +1,21 @@
 [gd_scene load_steps=3 format=3 uid="uid://c3nix6m8o6gks"]
 
-[ext_resource type="PackedScene" uid="uid://co8tb8vvys6vg" path="res://Scenes/Player/Human.tscn" id="1_r150o"]
+[ext_resource type="PackedScene" uid="uid://n55dbqg0u2mf" path="res://Scenes/Player/Human/tone_1_human_male.tscn" id="1_r150o"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_r150o"]
 
 [node name="Main" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Ground" type="StaticBody2D" parent="."]
 
-[node name="Human" parent="." instance=ExtResource("1_r150o")]
-position = Vector2(-2, -102)
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+position = Vector2(232, 0)
 shape = SubResource("WorldBoundaryShape2D_r150o")
+
+[node name="tone1_human_male" parent="." instance=ExtResource("1_r150o")]
+position = Vector2(274, -41)
+
+[node name="Camera2D" type="Camera2D" parent="tone1_human_male"]
+zoom = Vector2(2.5, 2.5)
+limit_smoothed = true
+position_smoothing_enabled = true
