@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bv2gloapfbf51"]
+
+[node name="Thane" type="CharacterBody2D"]
